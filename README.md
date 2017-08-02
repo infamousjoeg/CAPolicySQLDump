@@ -20,6 +20,8 @@ Whole process should take place running prompts as an Administrator user.
 ## Usage
 * policies.csv includes all default policies as of version 9.9.5
     * You will need to add on any additional custom policies.
+* Edit the .ps1 file and make sure all variables are correctly set.
+* Open PowerShell Console, browse to directory the .ps1 is at and `.\CAPolicySQLDump.ps1`
 
 ## Troubleshooting
 * If CreateCredFile included with this repository does not work, use the CreateCredFile located on your CPM Server at `{Drive}:\Program Files (x86)\CyberArk\Password Manager\Vault`.
