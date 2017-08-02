@@ -30,4 +30,4 @@ Whole process should take place running prompts as an Administrator user.
 Please update the [Issues](https://github.com/infamousjoeg/CAPolicySQLDump/issues) on this repo for support.
 
 ## License
-MIT
+[MIT](https://github.com/infamousjoeg/CAPolicySQLDump/blob/master/LICENSE)

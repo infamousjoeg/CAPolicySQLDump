@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Settings>
+    <PACLI>
+        <Folder>C:\PACLI</Folder>
+        <Username>Administrator</Username>
+        <CredFile>C:\PACLI\user.ini</CredFile>
+    </PACLI>
+    <Vault>
+        <Name>TEST</Name>
+        <Address>192.168.2.150</Address>
+        <Safe>PasswordManager_info</Safe>
+        <PolicyCSV>C:\PACLI\policy.csv</PolicyCSV>
+    </Vault>
+    <SQL>
+        <Server>BLUEDREAM/dev</Server>
+        <Database>cyberark</Database>
+        <Table>capolicies</Table>
+        <Username>sqlPolicyDump</Username>
+        <Password>Cyberark1</Password>
+        <Column>
+            <PolicyID>capolicyid</PolicyID>
+            <PolicyName>caplatformname</PolicyName>
+        </Column>
+    </SQL>
+</Settings>
