@@ -39,7 +39,7 @@ Policy-OS390Telnet.ini
 Policy-Registry.ini
 Policy-RSAManagement.ini
 Policy-SampleGroup.ini
-Policy-SameSSHKeyGroup.ini
+Policy-SampleSSHKeyGroup.ini
 Policy-SAP.ini
 Policy-SchedTask.ini
 Policy-SunOneDirectory.ini
