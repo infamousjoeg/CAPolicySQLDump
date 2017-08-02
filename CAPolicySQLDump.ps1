@@ -81,10 +81,20 @@ foreach ($row in $csvFile) {
     $fileReceived = Get-Content "${env:TEMP}/${row.PolicyFileName}.tmp"
     $PolicyID = $fileReceived | Select-String -Pattern "PolicyID=" -Encoding ascii | Select-Object -Last 1
     $PolicyName = $fileReceived | Select-String -Pattern "PolicyName=" -Encoding ascii | Select-Object -Last 1
+    
     ## TODO: Add trimming/pruning to remove all except PolicyID and PolicyName.
+    $strPolicyID = $PolicyID.Line.Split(";")
+    $strPolicyName = $PolicyName.Line.Split(";")
+    $strPolicyID = $strPolicyID.Split("=")
+    $strPolicyName = $strPolicyName.Split("=")
+    
+    $PolicyID = $strPolicyID[1].Trim()
+    $PolicyName = $strPolicyName[1].Trim()
 
     Write-Host "PolicyID:   ${PolicyID}"
     Write-Host "PolicyName: ${PolicyName}"
+
+    Remove-Variable -Name getFile, fileReceived, PolicyID, PolicyName
 }
 
 ## Disconnect user from Vault (Logoff)
