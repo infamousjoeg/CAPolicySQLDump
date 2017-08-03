@@ -7,15 +7,15 @@
     </PACLI>
     <Vault>
         <Name>TEST</Name>
-        <Address>192.168.2.150</Address>
+        <Address>10.0.0.10</Address>
         <Safe>PasswordManager_info</Safe>
     </Vault>
     <SQL>
-        <Server>BLUEDREAM\DEV</Server>
-        <Database>cyberark</Database>
+        <Server>SERVER\INSTANCE</Server>
+        <Database>database</Database>
         <Table>capolicies</Table>
-        <Username>sqlPolicyDump</Username>
-        <Password>Cyberark1</Password>
+        <Username>sqlUsername</Username>
+        <Password>Password123</Password>
         <Column>
             <PolicyID>capolicyid</PolicyID>
             <PolicyName>caplatformname</PolicyName>
