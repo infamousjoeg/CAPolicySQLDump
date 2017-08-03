@@ -18,9 +18,7 @@ Whole process should take place running prompts as an Administrator user.
     * Enter username and password and all default values and user.ini will be created in the directory CreateCredFile.exe ran from.
 
 ## Usage
-* policies.csv includes all default policies as of version 9.9.5
-    * You will need to add on any additional custom policies.
-* Edit the .ps1 file and make sure all variables are correctly set.
+* Edit `Settings.xml` and set the parameters to your specifications.
 * Open PowerShell Console, browse to directory the .ps1 is at and `.\CAPolicySQLDump.ps1`
 
 ## Troubleshooting

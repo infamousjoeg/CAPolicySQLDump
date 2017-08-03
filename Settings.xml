@@ -9,10 +9,9 @@
         <Name>TEST</Name>
         <Address>192.168.2.150</Address>
         <Safe>PasswordManager_info</Safe>
-        <PolicyCSV>C:\PACLI\policy.csv</PolicyCSV>
     </Vault>
     <SQL>
-        <Server>BLUEDREAM/dev</Server>
+        <Server>BLUEDREAM\DEV</Server>
         <Database>cyberark</Database>
         <Table>capolicies</Table>
         <Username>sqlPolicyDump</Username>
